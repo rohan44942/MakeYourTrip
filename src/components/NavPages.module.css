@@ -1,0 +1,15 @@
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: antiquewhite;
+}
+
+.nav ul {
+  text-decoration: none;
+  font-style: none;
+}
+.nav :global(.active) {
+  background-color: blueviolet;
+}
+    
