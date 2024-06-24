@@ -1,6 +1,7 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
 import styles from "./Map.module.css";
 function Map() {
+ 
   const [params, setParams] = useSearchParams();
   // console.log(params)/;
   const lat = params.get("lat");
@@ -13,14 +14,14 @@ function Map() {
       <h2>
         Map
         <p>
-          <span>latitude={lat}</span>
-          <span>longitude={lng}</span>
+          <span> latitude={lat} {console.log(lat)}</span>
+          <span> longitude={lng}</span>
         </p>
       </h2>
 
       <button
         onClick={() => {
-          setParams({ lat: 45, lng: 79 });
+          setParams({ lat: 405, lng: 579 });
         }}
       >
         change the coordinates
