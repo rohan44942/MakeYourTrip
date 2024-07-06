@@ -9,6 +9,7 @@ function CityList() {
   if (isloading) {
     return <Spinner />;
     
+    
   }
   if (!cities.length) {
     return (
