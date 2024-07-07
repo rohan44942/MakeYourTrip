@@ -5,6 +5,7 @@ import Message from "./Message";
 import { useCities } from "../contexts/CitiesContext";
 
 function CountryList() {
+
   // console.log(countries);
   // const countries =[];
   const {cities,isLoading} = useCities();
@@ -12,6 +13,7 @@ function CountryList() {
     if (!arr.map((el) => el.country).includes(city.country)) {
       return [...arr, { country: city.country, emoji: city.emoji }];
     }
+    
     return arr;
   }, []);
   if (isLoading) {
