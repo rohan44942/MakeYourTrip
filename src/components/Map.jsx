@@ -7,6 +7,7 @@ function Map() {
   const lat = params.get("lat");
   const lng = params.get("lng");
   // console.log(lat, lng);
+  
   // setting up the useNavigation for opening form components by clicking on the mapz
   const navigate = useNavigate();
   return (
