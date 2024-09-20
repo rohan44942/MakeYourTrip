@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   createContext,
   useEffect,
@@ -140,10 +141,52 @@ function CitiesProvider({ children }) {
         type: "rejected",
         payload: "There was an error deleting the city...",
       });
+=======
+import { createContext, useState, useEffect, useContext } from "react";
+
+const CitiesContext = createContext();
+
+const BASE_URL = " http://localhost:3000";
+
+function CitiesProvider({ children }) {
+  const [cities, setCities] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [currentCity, setCurrentCity] = useState({});
+  // use efftect state
+
+  useEffect(() => {
+    async function fetchcity() {
+      try {
+        setIsLoading(true);
+        const res = await fetch(`${BASE_URL}/cities`);
+        const data = await res.json();
+        setCities(data);
+      } catch {
+        throw new Error("data is not fetched");
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchcity();
+  }, []);
+
+  async function getCity(id) {
+    try {
+      //try and catch  fh
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/cities/${id}`);
+      const data = await res.json();
+      setCurrentCity(data);
+    } catch {
+      throw new Error("data is not fetched");
+    } finally {
+      setIsLoading(false);
+>>>>>>> f7112c7bd9c89e866c531280b021c38d2e416684
     }
   }
 
   return (
+<<<<<<< HEAD
     <CitiesContext.Provider
       value={{
         cities,
@@ -155,10 +198,14 @@ function CitiesProvider({ children }) {
         deleteCity,
       }}
     >
+=======
+    <CitiesContext.Provider value={{ cities, isLoading, getCity, currentCity }}>
+>>>>>>> f7112c7bd9c89e866c531280b021c38d2e416684
       {children}
     </CitiesContext.Provider>
   );
 }
+<<<<<<< HEAD
 
 function useCities() {
   const context = useContext(CitiesContext);
@@ -167,4 +214,15 @@ function useCities() {
   return context;
 }
 
+=======
+function useCities() {
+  const context = useContext(CitiesContext);
+  if (context === undefined) {
+    throw new console.error(
+      "trying to access the context from wrong children component"
+    );
+  }
+  return context;
+}
+>>>>>>> f7112c7bd9c89e866c531280b021c38d2e416684
 export { CitiesProvider, useCities };

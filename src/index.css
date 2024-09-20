@@ -1,5 +1,9 @@
 /* Taken from getting started guide at: https://leafletjs.com/examples/quick-start/ */
+<<<<<<< HEAD
 @import "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css";
+=======
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+>>>>>>> f7112c7bd9c89e866c531280b021c38d2e416684
 @import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
 
 /* These CSS variables are global, so they are available in all CSS modules */

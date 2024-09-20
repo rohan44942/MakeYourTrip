@@ -4,7 +4,10 @@
   list-style: none;
   overflow-y: scroll;
   overflow-x: hidden;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f7112c7bd9c89e866c531280b021c38d2e416684
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
