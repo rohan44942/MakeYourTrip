@@ -1,0 +1,76 @@
+{
+  "cities": [
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": 17806751
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": 98443197
+    },
+    {
+      "cityName": "Nijar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2023-04-03T07:47:59.202Z",
+      "notes": "",
+      "position": {
+        "lat": "36.967508314568164",
+        "lng": "-2.13128394200588"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Narnaul",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-09-13T18:37:06.847Z",
+      "notes": "this is my home town ",
+      "position": {
+        "lat": "28.071078737841916",
+        "lng": "76.11310958862306"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Sri Madhopur",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-09-13T18:37:40.349Z",
+      "notes": "shree khatu shyam ki temple ",
+      "position": {
+        "lat": "27.350380805457387",
+        "lng": "75.53375244140626"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Rian",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-09-14T08:04:57.332Z",
+      "notes": "this a berrry dry place\n",
+      "position": {
+        "lat": "26.494375158163084",
+        "lng": "74.02587890625001"
+      },
+      "id": 98443201
+    }
+  ]
+}
